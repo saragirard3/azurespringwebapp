@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class IndexController {
+public class LoginController {
 
-    @GetMapping({"/","/index"})
-    public ModelAndView Index(){
+    @GetMapping("/login")
+    public ModelAndView Login(){
         ModelAndView model = new ModelAndView();
-        model.setViewName("index");
+        model.setViewName("login");
         return model;
     }
 }
