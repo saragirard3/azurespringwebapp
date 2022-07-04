@@ -73,6 +73,7 @@ CREATE TABLE ADM (
 
 CREATE TABLE USERS (
                      USER_ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                     USERNAME VARCHAR(100),
                      FIRST_NAME VARCHAR(100),
                      LAST_NAME VARCHAR(100),
                      EMAIL VARCHAR(150),
