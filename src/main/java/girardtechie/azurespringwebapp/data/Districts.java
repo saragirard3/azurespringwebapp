@@ -13,7 +13,7 @@ public class Districts {
     @Column(name="D_ID")
     private long dId;
     @Column(name="DIST_ID")
-    private long distId;
+    private String distId;
     @Column(name="DIST_NAME")
     private String distName;
     @Column(name="METRO48")
@@ -31,7 +31,7 @@ public class Districts {
         return dId;
     }
 
-    public long getDistId() {
+    public String getDistId() {
         return distId;
     }
 
