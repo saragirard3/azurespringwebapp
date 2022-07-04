@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class Revenue {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="REV_ID")
     private long revId;
     @Column(name="DIST_ID")

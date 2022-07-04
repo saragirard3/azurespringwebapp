@@ -35,5 +35,18 @@ public class DistrictServices {
         });
         return districtsList;
     }
+//
+//    public List<Users> getUsers() {
+//        Iterable<Users> users = this.usersRepository.findAll();
+//        List<Users> usersList = new ArrayList<>();
+//        users.forEach(user->{usersList.add(user);});
+//        usersList.sort(new Comparator<Users>() {
+//            @Override
+//            public int compare(Users o1, Users o2) {
+//                return o1.getUserName().compareTo(o2.getUserName());
+//            }
+//        });
+//        return usersList;
+//    }
 
 }
