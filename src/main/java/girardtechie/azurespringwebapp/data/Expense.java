@@ -1,17 +1,23 @@
 package girardtechie.azurespringwebapp.data;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 
 
-@EntityScan
+@Entity
 @Table(name="EXPENSE")
 public class Expense {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="EXP_ID")
+    private long expId;
+
     @Column(name="DIST_ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long distId;
+
     @Column(name="FISCAL_YEAR")
     private long fiscalYear;
     @Column(name="DIST_LEV_ADM")
@@ -54,6 +60,10 @@ public class Expense {
     private long debtSvc;
     @Column(name="OPEB_SVC")
     private long opebSvc;
+
+    public long getExpId() {
+        return expId;
+    }
 
     public long getDistId() {
         return distId;
@@ -146,7 +156,8 @@ public class Expense {
     @Override
     public String toString() {
         return "Expense{" +
-                "distId=" + distId +
+                "expId=" + expId +
+                ", distId=" + distId +
                 ", fiscalYear=" + fiscalYear +
                 ", distLevAdm=" + distLevAdm +
                 ", schLevAdm=" + schLevAdm +

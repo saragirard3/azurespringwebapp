@@ -4,12 +4,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 
-@EntityScan
+@Entity
 @Table(name="DISTRICTS")
 public class Districts {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="D_ID")
     private long dId;
     @Column(name="DIST_ID")

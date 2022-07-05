@@ -4,12 +4,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 
-@EntityScan
+@Entity
 @Table(name="USERS")
 public class Users {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="USER_ID")
     private long userId;
     @Column(name="FIRST_NAME")

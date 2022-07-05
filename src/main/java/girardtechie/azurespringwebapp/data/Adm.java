@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
 
-@EntityScan
+@Entity
 @Table(name="ADM")
 public class Adm {
 
