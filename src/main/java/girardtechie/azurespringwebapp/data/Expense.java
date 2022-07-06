@@ -1,10 +1,6 @@
 package girardtechie.azurespringwebapp.data;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
-
 
 @Entity
 @Table(name="EXPENSE")
@@ -14,10 +10,8 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="EXP_ID")
     private long expId;
-
     @Column(name="DIST_ID")
     private long distId;
-
     @Column(name="FISCAL_YEAR")
     private long fiscalYear;
     @Column(name="DIST_LEV_ADM")

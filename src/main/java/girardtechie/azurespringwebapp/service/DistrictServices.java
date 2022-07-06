@@ -1,7 +1,6 @@
 package girardtechie.azurespringwebapp.service;
 
 import girardtechie.azurespringwebapp.data.*;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,6 +9,7 @@ import java.util.List;
 
 @Service
 public class DistrictServices {
+
     private final UsersRepository usersRepository;
     private final ExpenseRepository expenseRepository;
     private final RevenueRepository revenueRepository;
